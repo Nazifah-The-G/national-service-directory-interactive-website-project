@@ -17,36 +17,39 @@
 </head>
 <body class="inter">
     <header>
-        <nav class="flex justify-between items-center lg:p-[10px] mb-[7px] mt-[7px] mx-auto max-w-[1920px]">
+        <nav class="flex justify-between items-center max-sm:px-[2px] lg:p-[10px] mb-[7px] mt-[7px] mx-auto max-w-[1920px]">
          <div class="flex justify-center items-center gap-[5px]  max-sm:gap-0">
           <img src="./assets/logo.png" class="w-[50px] h-[50px]">
           <p class="font-bold text-[#006747]">Emergency <br>Service</a></p>
         </div>
         <div class="flex gap-[15px] max-sm:gap-[2px]">
-            <div class="flex gap-[10px] justify-center items-center max-sm:w-[70px] max-sm:h-[30px] w-[123px] h-[52px] bg-[#41FF6B1A] rounded-[50px]">
+            <div class="flex gap-[10px] max-sm:gap-[2px] justify-center items-center max-sm:w-[70px] max-sm:h-[30px] w-[123px] h-[52px] bg-[#41FF6B1A] rounded-[50px]">
                 <p class="font-bold"><span id="total-heart">0</span></p>
                 <img src="./assets/heart.png" class="w-[30px] h-[30px]">
             </div>
-            <div class="flex gap-[10px] justify-center items-center w-[123px] h-[52px] max-sm:w-[70px] max-sm:h-[30px] bg-[#41FF6B1A] rounded-[50px]">
+            <div class="flex gap-[10px] max-sm:gap-[2px] justify-center items-center w-[123px] h-[52px] max-sm:w-[70px] max-sm:h-[30px] bg-[#41FF6B1A] rounded-[50px]">
                 <p class="font-bold"><span id="total-coin">100</span></p>
                 <img src="./assets/coin.png" class="w-[30px] h-[30px]">
             </div>
-            <div class="flex gap-[10px] justify-center items-center w-[123px] h-[52px] max-sm:w-[70px] max-sm:h-[30px] bg-[#00A63E] rounded-[50px]">
-                <p class="text-white font-semibold">2 Copy</p>
+            <div class="flex gap-[10px] max-sm:gap-[2px] justify-center items-center w-[123px] h-[52px] max-sm:w-[70px] max-sm:h-[30px] bg-[#00A63E] rounded-[50px]">
+                <p class="text-white font-semibold" id="total-copy">0</p>
+                <p class="text-white font-semibold">Copy</p>
             </div>
         </div>
      </nav>
     </header>
-     <section class="xl:px-[60px] py-[12px] mx-auto max-w-[1920px] bg-[linear-gradient(90deg,#013223_0%,#006747_50%,#013223_100%)]">
-        <div class="flex justify-center items-center flex-col">
+     <section class="lg:px-[60px] py-[12px] mx-auto max-w-[1920px] bg-[linear-gradient(90deg,#013223_0%,#006747_50%,#013223_100%)]">
+        <div class="lg:flex justify-center items-center flex-col">
+         <div class="max-sm:flex max-sm:flex-col max-sm:items-center">
             <img src="./assets/logo-dark.png" class="h-[92px] w-[92px]">
             <p class="font-bold text-2xl text-white">Emergency Service Directory</p>
-            <p class="text-white">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+         </div>   
+            <p class="text-white">Government Emergency Services at Your Fingertip–A Project by Government of the People’s Republic of Bangladesh</p>
         </div>
      </section>
-     <section class="xl:p-[50px] bg-[#effff0] mx-auto max-w-[1920px] lg:flex gap-[30px] ">
-        <div id="card-container"   class="grid grid-cols-3 grid-rows-3 gap-[30px] max-sm:grid-cols-1">
-            <div class="rounded-[12px]  p-[32px] bg-white">
+     <section class="lg:p-[50px] bg-[#effff0] mx-auto max-w-[1920px] lg:flex gap-[30px] ">
+        <div id="card-container" class=" lg:w-3/4 grid grid-cols-3 grid-rows-3 gap-[30px] max-sm:grid-cols-1">
+            <div class=" max-sm:mt-4 shadow-md rounded-[12px]  p-[32px] bg-white">
                 <div class="flex justify-between items-center mb-[16px]">
                     <div class="h-[60px] w-[60px] rounded-sm bg-[#FFE3E2] flex justify-center items-center">
                     <img src="./assets/emergency.png" class="h-[32px] w-[32px]">
@@ -57,12 +60,12 @@
                 <p class="text-gray-500 mb-[24px]">National Emergency</p>
                 <p  class="font-bold text-2xl  text-to-copy">999</p>
                 <div class="h-[37px] w-[80px] mb-[24px] flex justify-center items-center rounded-lg bg-[#F2F2F2] text-gray-500">All</div>
-                <div class="flex gap-[10px]">
-                <button class="btn-copy btn hover:bg-gray-200 rounded-lg h-[40px] w-[183px] border-1 border-gray-500 text-gray-500"><i class="fa-regular fa-copy text-gray-500 mr-[2px]"></i>Copy</button>
-                <button class="btn-call btn hover:bg-[#effff0] rounded-lg h-[40px] w-[183px] text-white bg-[#00A63E]"><i class="fa-solid fa-phone mr-[2px]" style="color: #ffffff;"></i>Call</button>   
+                <div class="flex justify-between gap-[10px]">
+                <button class="btn-copy btn hover:bg-gray-200 rounded-lg h-[40px] w-1/2 border-1 border-gray-500 text-gray-500"><i class="fa-regular fa-copy text-gray-500 mr-[2px]"></i>Copy</button>
+                <button class="btn-call btn hover:bg-[#effff0] rounded-lg h-[40px] w-1/2 text-white bg-[#00A63E]"><i class="fa-solid fa-phone mr-[2px]" style="color: #ffffff;"></i>Call</button>   
                 </div>
             </div>
-            <div class="rounded-[12px] p-[32px] bg-white">
+            <div class="shadow-md rounded-[12px] p-[32px] bg-white">
                 <div class="flex justify-between items-center mb-[16px]">
                     <div class="h-[60px] w-[60px] rounded-sm bg-[#DFEFFF] flex justify-center items-center">
                     <img src="./assets/police.png" class="h-[32px] w-[32px]">
@@ -73,12 +76,12 @@
                 <p class="text-gray-500 mb-[24px]">Police</p>
                 <p  class="font-bold text-2xl text-to-copy">999</p>
                 <div class="h-[37px] w-[80px] mb-[24px] flex justify-center items-center rounded-lg bg-[#F2F2F2] text-gray-500">Police</div>
-                <div class="flex gap-[10px]">
-                <button class="btn-copy btn hover:bg-gray-200 rounded-lg h-[40px] w-[183px] border-1 border-gray-500 text-gray-500"><i class="fa-regular fa-copy text-gray-500 mr-[2px]"></i>Copy</button>
-                <button class="btn-call btn hover:bg-[#effff0] rounded-lg h-[40px] w-[183px] text-white bg-[#00A63E]"><i class="fa-solid fa-phone mr-[2px]" style="color: #ffffff;"></i>Call</button>   
+                <div class="flex justify-between gap-[10px]">
+                <button class="btn-copy btn hover:bg-gray-200 rounded-lg h-[40px] w-1/2 border-1 border-gray-500 text-gray-500"><i class="fa-regular fa-copy text-gray-500 mr-[2px]"></i>Copy</button>
+                <button class="btn-call btn hover:bg-[#effff0] rounded-lg h-[40px] w-1/2 text-white bg-[#00A63E]"><i class="fa-solid fa-phone mr-[2px]" style="color: #ffffff;"></i>Call</button>   
                 </div>
             </div>
-            <div class="rounded-[12px] p-[32px] bg-white">
+            <div class="] shadow-md rounded-[12px] p-[32px] bg-white">
                 <div class="flex justify-between items-center mb-[16px]">
                     <div class="h-[60px] w-[60px] rounded-sm bg-[#FFE3E2] flex justify-center items-center">
                     <img src="./assets/fire-service.png" class="h-[32px] w-[32px]">
@@ -89,12 +92,12 @@
                 <p class="text-gray-500 mb-[24px]">Fire Service</p>
                 <p  class="font-bold text-2xl text-to-copy">999</p>
                 <div class="h-[37px] w-[80px] mb-[24px] flex justify-center items-center rounded-lg bg-[#F2F2F2] text-gray-500">Fire</div>
-                <div class="flex gap-[10px]">
-                <button class="btn-copy btn hover:bg-gray-200 rounded-lg h-[40px] w-[183px] border-1 border-gray-500 text-gray-500"><i class="fa-regular fa-copy text-gray-500 mr-[2px]"></i>Copy</button>
-                <button class="btn-call btn hover:bg-[#effff0] rounded-lg h-[40px] w-[183px] text-white bg-[#00A63E]"><i class="fa-solid fa-phone mr-[2px]" style="color: #ffffff;"></i>Call</button>   
+                <div class="flex justify-between gap-[10px]">
+                <button class="btn-copy btn hover:bg-gray-200 rounded-lg h-[40px] w-1/2 border-1 border-gray-500 text-gray-500"><i class="fa-regular fa-copy text-gray-500 mr-[2px]"></i>Copy</button>
+                <button class="btn-call btn hover:bg-[#effff0] rounded-lg h-[40px] w-1/2 text-white bg-[#00A63E]"><i class="fa-solid fa-phone mr-[2px]" style="color: #ffffff;"></i>Call</button>   
                 </div>
             </div>
-            <div class="rounded-[12px]  p-[32px] bg-white">
+            <div class="] shadow-md rounded-[12px]  p-[32px] bg-white">
                 <div class="flex justify-between items-center mb-[16px]">
                     <div class="h-[60px] w-[60px] rounded-sm bg-[#FFE3E2] flex justify-center items-center">
                     <img src="./assets/ambulance.png" class="h-[32px] w-[32px]">
@@ -105,12 +108,12 @@
                 <p class="text-gray-500 mb-[24px]">Ambulance</p>
                 <p  class="font-bold text-2xl text-to-copy">1994-999999</p>
                 <div class="h-[37px] w-[80px] mb-[24px] flex justify-center items-center rounded-lg bg-[#F2F2F2] text-gray-500">Health</div>
-                <div class="flex gap-[10px]">
-                <button class="btn-copy btn hover:bg-gray-200 rounded-lg h-[40px] w-[183px] border-1 border-gray-500 text-gray-500"><i class="fa-regular fa-copy text-gray-500 mr-[2px]"></i>Copy</button>
-                <button class="btn-call btn hover:bg-[#effff0] rounded-lg h-[40px] w-[183px] text-white bg-[#00A63E]"><i class="fa-solid fa-phone mr-[2px]" style="color: #ffffff;"></i>Call</button>   
+                <div class="flex justify-between gap-[10px]">
+                <button class="btn-copy btn hover:bg-gray-200 rounded-lg h-[40px] w-1/2 border-1 border-gray-500 text-gray-500"><i class="fa-regular fa-copy text-gray-500 mr-[2px]"></i>Copy</button>
+                <button class="btn-call btn hover:bg-[#effff0] rounded-lg h-[40px] w-1/2 text-white bg-[#00A63E]"><i class="fa-solid fa-phone mr-[2px]" style="color: #ffffff;"></i>Call</button>   
                 </div>
             </div>
-            <div class="rounded-[12px] p-[32px] bg-white">
+            <div class="] shadow-md rounded-[12px] p-[32px] bg-white">
                 <div class="flex justify-between items-center mb-[16px]">
                     <div class="h-[60px] w-[60px] rounded-sm bg-[#FFE3E2] flex justify-center items-center">
                     <img src="./assets/emergency.png" class="h-[32px] w-[32px]">
@@ -121,12 +124,12 @@
                 <p class="text-gray-500 mb-[24px]">Women & Child Helpline</p>
                 <p  class="font-bold text-2xl text-to-copy">109</p>
                 <div class="h-[37px] w-[80px] mb-[24px] flex justify-center items-center rounded-lg bg-[#F2F2F2] text-gray-500">Help</div>
-                <div class="flex gap-[10px]">
-                <button class="btn-copy btn hover:bg-gray-200 rounded-lg h-[40px] w-[183px] border-1 border-gray-500 text-gray-500"><i class="fa-regular fa-copy text-gray-500 mr-[2px]"></i>Copy</button>
-                <button class="btn-call btn hover:bg-[#effff0] rounded-lg h-[40px] w-[183px] text-white bg-[#00A63E]"><i class="fa-solid fa-phone mr-[2px]" style="color: #ffffff;"></i>Call</button>   
+                <div class="flex justify-between gap-[10px]">
+                <button class="btn-copy btn hover:bg-gray-200 rounded-lg h-[40px] w-1/2 border-1 border-gray-500 text-gray-500"><i class="fa-regular fa-copy text-gray-500 mr-[2px]"></i>Copy</button>
+                <button class="btn-call btn hover:bg-[#effff0] rounded-lg h-[40px] w-1/2 text-white bg-[#00A63E]"><i class="fa-solid fa-phone mr-[2px]" style="color: #ffffff;"></i>Call</button>   
                 </div>
             </div>
-            <div class="rounded-[12px] p-[32px] bg-white">
+            <div class="] shadow-md rounded-[12px] p-[32px] bg-white">
                 <div class="flex justify-between items-center mb-[16px]">
                     <div class="h-[60px] w-[60px] rounded-sm bg-[#FFE3E2] flex justify-center items-center">
                     <img src="./assets/emergency.png" class="h-[32px] w-[32px]">
@@ -137,12 +140,12 @@
                 <p class="text-gray-500 mb-[24px]">Anti-Corruption</p>
                 <p  class="font-bold text-2xl text-to-copy">106</p>
                 <div class="h-[37px] w-[80px] mb-[24px] flex justify-center items-center rounded-lg bg-[#F2F2F2] text-gray-500">Govt.</div>
-                <div class="flex gap-[10px]">
-                <button class="btn-copy btn hover:bg-gray-200 rounded-lg h-[40px] w-[183px] border-1 border-gray-500 text-gray-500"><i class="fa-regular fa-copy text-gray-500 mr-[2px]"></i>Copy</button>
-                <button class="btn-call btn hover:bg-[#effff0] rounded-lg h-[40px] w-[183px] text-white bg-[#00A63E]"><i class="fa-solid fa-phone mr-[2px]" style="color: #ffffff;"></i>Call</button>   
+                <div class="flex justify-between gap-[10px]">
+                <button class="btn-copy btn hover:bg-gray-200 rounded-lg h-[40px] w-1/2 border-1 border-gray-500 text-gray-500"><i class="fa-regular fa-copy text-gray-500 mr-[2px]"></i>Copy</button>
+                <button class="btn-call btn hover:bg-[#effff0] rounded-lg h-[40px] w-1/2 text-white bg-[#00A63E]"><i class="fa-solid fa-phone mr-[2px]" style="color: #ffffff;"></i>Call</button>   
                 </div>
             </div>
-            <div class="rounded-[12px] p-[32px] bg-white">
+            <div class="] shadow-md rounded-[12px] p-[32px] bg-white">
                 <div class="flex justify-between items-center mb-[16px]">
                     <div class="h-[60px] w-[60px] rounded-sm bg-[#FFE3E2] flex justify-center items-center">
                     <img src="./assets/emergency.png" class="h-[32px] w-[32px]">
@@ -153,12 +156,12 @@
                 <p class="text-gray-500 mb-[24px]">Electricity Outage</p>
                 <p  class="font-bold text-2xl text-to-copy">16216</p>
                 <div class="h-[37px] w-[80px] mb-[24px] flex justify-center items-center rounded-lg bg-[#F2F2F2] text-gray-500">Electricity</div>
-                <div class="flex gap-[10px]">
-                <button class="btn-copy btn hover:bg-gray-200 rounded-lg h-[40px] w-[183px] border-1 border-gray-500 text-gray-500"><i class="fa-regular fa-copy text-gray-500 mr-[2px]"></i>Copy</button>
-                <button class="btn-call btn hover:bg-[#effff0] rounded-lg h-[40px] w-[183px] text-white bg-[#00A63E]"><i class="fa-solid fa-phone mr-[2px]" style="color: #ffffff;"></i>Call</button>   
+                <div class="flex justify-between gap-[10px]">
+                <button class="btn-copy btn hover:bg-gray-200 rounded-lg h-[40px] w-1/2 border-1 border-gray-500 text-gray-500"><i class="fa-regular fa-copy text-gray-500 mr-[2px]"></i>Copy</button>
+                <button class="btn-call btn hover:bg-[#effff0] rounded-lg h-[40px] w-1/2 text-white bg-[#00A63E]"><i class="fa-solid fa-phone mr-[2px]" style="color: #ffffff;"></i>Call</button>   
                 </div>
             </div>
-            <div class="rounded-[12px] p-[32px] bg-white">
+            <div class="] shadow-md rounded-[12px] p-[32px]  bg-white">
                 <div class="flex justify-between items-center mb-[16px]">
                     <div class="h-[60px] w-[60px] rounded-sm bg-[#FFE3E2] flex justify-center items-center">
                     <img src="./assets/brac.png" class="h-[32px] w-[32px]">
@@ -169,12 +172,12 @@
                 <p class="text-gray-500 mb-[24px]">BRAC</p>
                 <p  class="font-bold text-2xl text-to-copy">999</p>
                 <div class="h-[37px] w-[80px] mb-[24px] flex justify-center items-center rounded-lg bg-[#F2F2F2] text-gray-500">NGO</div>
-                <div class="flex gap-[10px]">
-                <button class="btn-copy btn hover:bg-gray-200 rounded-lg h-[40px] w-[183px] border-1 border-gray-500 text-gray-500"><i class="fa-regular fa-copy text-gray-500 mr-[2px]"></i>Copy</button>
-                <button class="btn-call btn hover:bg-[#effff0] rounded-lg h-[40px] w-[183px] text-white bg-[#00A63E]"><i class="fa-solid fa-phone mr-[2px]" style="color: #ffffff;"></i>Call</button>   
+                <div class="flex justify-between gap-[10px]">
+                <button class="btn-copy btn hover:bg-gray-200 rounded-lg h-[40px] w-1/2 border-1 border-gray-500 text-gray-500"><i class="fa-regular fa-copy text-gray-500 mr-[2px]"></i>Copy</button>
+                <button class="btn-call btn hover:bg-[#effff0] rounded-lg h-[40px] w-1/2 text-white bg-[#00A63E]"><i class="fa-solid fa-phone mr-[2px]" style="color: #ffffff;"></i>Call</button>   
                 </div>
        </div>
-       <div class="rounded-[12px]  p-[32px] bg-white">
+       <div class="] shadow-md rounded-[12px]  p-[32px] bg-white">
                 <div class="flex justify-between items-center mb-[16px]">
                     <div class="h-[60px] w-[60px] rounded-sm bg-[#FFE3E2] flex justify-center items-center">
                     <img src="./assets/Bangladesh-Railway.png" class="h-[32px] w-[32px]">
@@ -186,18 +189,18 @@
                 <p  class="font-bold text-2xl text-to-copy">163</p>
                 <div class="h-[37px] w-[80px] mb-[24px] flex justify-center items-center rounded-lg bg-[#F2F2F2] text-gray-500">Travel</div>
                 <div class="flex justify-between gap-[10px]">
-                <button class="btn-copy btn hover:bg-gray-200 rounded-lg  border-1 h-[40px] w-[183px] border-gray-500 text-gray-500"><i class="fa-regular fa-copy text-gray-500 mr-[2px]"></i>Copy</button>
-                <button class="btn-call btn hover:bg-[#effff0] rounded-lg h-[40px] w-[183px] text-white bg-[#00A63E]"><i class="fa-solid fa-phone mr-[2px]" style="color: #ffffff;"></i>Call</button>   
+                <button class="btn-copy btn hover:bg-gray-200 rounded-lg  border-1 h-[40px] w-1/2 border-gray-500 text-gray-500"><i class="fa-regular fa-copy text-gray-500 mr-[2px]"></i>Copy</button>
+                <button class="btn-call btn hover:bg-[#effff0] rounded-lg h-[40px] w-1/2 text-white bg-[#00A63E]"><i class="fa-solid fa-phone mr-[2px]" style="color: #ffffff;"></i>Call</button>   
                 </div>
             </div>
         </div>
-        <aside id="call-history-parent" class="p-[14px] rounded-xl bg-white">
-            <div class="flex items-center mb-[14px] gap-[100px] justify-between">
+        <aside id="call-history-parent" class="lg:w-1/4 p-[14px] rounded-xl bg-white max-sm:mt-[10px]">
+            <div class="flex items-center mb-[14px] gap-[50px] justify-between">
                 <div class="flex items-center justify-center gap-[5px]">
-                    <i class="fa-regular fa-clock text-gray-500"></i>
+                    <i class="fa-regular fa-clock text-gray-500 text-2xl"></i>
                     <p class="font-bold text-xl">Call History</p>
                 </div>
-                <button class="btn-clear-all btn hover:bg-[#effff0] w-[114px] h-[52px] rounded-[50px] text-white bg-[#00A63E]">Clear</button>
+                <button class="btn-clear-all btn hover:bg-[#effff0] w-[114px] h-[52px] rounded-[50px] text-white text-xl bg-[#00A63E]">Clear</button>
             </div> 
         </aside>
     </section>

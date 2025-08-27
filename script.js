@@ -1,3 +1,9 @@
+function byId(id){
+    let element = document.getElementById(id) ;
+    return element;
+}
+
+//handle copy
 let buttons = document.querySelectorAll(".btn-copy");
 
 for (let i = 0; i < buttons.length; i++) {
@@ -5,15 +11,11 @@ for (let i = 0; i < buttons.length; i++) {
     let card = this.parentNode.parentNode;        
     let text = card.querySelector(".text-to-copy").innerText;
     navigator.clipboard.writeText(text);
-    alert("Copied: " + text);
+    alert("Number Copied: " + text);
+    let newTotalCopy = Number(byId('total-copy').innerText) + 1;
+    byId('total-copy').innerText = newTotalCopy;
   });
 }
-
-function byId(id){
-    let element = document.getElementById(id) ;
-    return element;
-}
-
 
 // delegation
 byId("card-container").addEventListener("click", function (e) {
