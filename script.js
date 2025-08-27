@@ -1,7 +1,20 @@
+let buttons = document.querySelectorAll(".btn-copy");
+
+for (let i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener("click", function() {
+    let card = this.parentNode.parentNode;        
+    let text = card.querySelector(".text-to-copy").innerText;
+    navigator.clipboard.writeText(text);
+    alert("Copied: " + text);
+  });
+}
+
 function byId(id){
-    const element = document.getElementById(id);
+    let element = document.getElementById(id) ;
     return element;
 }
+
+
 // delegation
 byId("card-container").addEventListener("click", function (e) {
     if (e.target.className.includes("btn-heart")) {
