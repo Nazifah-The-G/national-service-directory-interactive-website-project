@@ -39,7 +39,7 @@ byId("card-container").addEventListener("click", function (e) {
         newCallHistoryCard.classList.add('new-hstry-cntnr');
         const currentTime = new Date().toLocaleTimeString(); 
         newCallHistoryCard.innerHTML = `
-        <div class="bg-[#FAFAFA] lg:flex justify-between items-center p-[16px] rounded-sm mb-[12px] gap-[16px]">
+        <div class="bg-[#FAFAFA] flex justify-between items-center p-[16px] rounded-sm mb-[12px] gap-[16px]">
                 <div>
                     <p class="font-semibold text-xl">${typeHelp}</p>
                     <p class="text-gray-500">${number}</p>
