@@ -41,7 +41,7 @@ byId("card-container").addEventListener("click", function (e) {
         newCallHistoryCard.innerHTML = `
         <div class="bg-[#FAFAFA] flex justify-between items-center p-[10px] rounded-sm mb-[12px]">
                 <div>
-                    <p class="font-semibold text-xl">${typeHelp}</p>
+                    <p class="font-semibold text-base">${typeHelp}</p>
                     <p class="text-gray-500">${number}</p>
                 </div>
                 <div class='text-gray-500'>
